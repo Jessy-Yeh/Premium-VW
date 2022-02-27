@@ -1,0 +1,268 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  font-weight: 300;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  border-bottom-style: solid;
+  border-bottom-color: grey;
+  position: sticky;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.6);
+  z-index: 99;
+}
+
+.logo-container {
+  margin: 12px 15px;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.logo {
+  width: 30px;
+  height: 30px;
+}
+
+.brand-name {
+  font-size: 1.5rem;
+  margin-right: 5px;
+}
+
+.nav {
+  font-weight: 500;
+}
+
+.menu-item {
+  margin-right: 25px;
+  text-decoration: none;
+  color: black;
+}
+
+.egolf-img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -99;
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+}
+
+/* .parallax {
+  background-image: url("./image/e-golf-hero.webp");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
+.e-golf-container {
+  position: absolute;
+}
+
+.e-golf-description {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 500px;
+  color: white;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 280px;
+  left: 40px;
+  border-left: 15px solid rgb(29, 29, 113);
+}
+
+.egolf-title {
+  font-size: 3.2rem;
+  font-weight: 500;
+}
+
+.egolf-smalltext {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.egolf-options {
+  margin-top: 30px;
+}
+
+.egolf-features {
+  margin-top: 15px;
+}
+
+.egolf-options li {
+  display: inline;
+  font-weight: 300;
+  margin-right: 1rem;
+  border: 1px solid rgb(62, 60, 60);
+  padding: 10px;
+  cursor: pointer;
+}
+
+.egolf-options li:first-child {
+  background-color: rgb(55, 55, 223);
+  border: none;
+  transition: 0.2s;
+}
+
+.egolf-options li:first-child:hover {
+  background-color: rgb(90, 90, 220);
+}
+
+.sub-container {
+  background-color: white;
+  padding: 40px 6rem;
+  /* position: absolute; */
+  margin-top: 40rem;
+}
+
+.sub-title {
+  font-size: 2rem;
+  margin-top: 3rem;
+}
+
+.info-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-nav-container {
+  background-color: rgb(249, 249, 249);
+  padding: 20px 30px;
+  margin-top: 2rem;
+}
+
+.info-nav li {
+  margin-right: 2rem;
+  cursor: pointer;
+  color: rgb(55, 55, 223);
+}
+
+.info-nav li:hover {
+  text-decoration: underline;
+}
+
+.intro {
+  margin-top: 3rem;
+}
+
+.intro:nth-child(3) {
+  flex-direction: row-reverse;
+}
+
+.intro-title {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.image-filter-container {
+  display: flex;
+  align-items: center;
+}
+
+.image-select {
+  padding: 5px;
+  margin-left: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.gallery-photos {
+  width: 80%;
+  display: inline-flex;
+  flex-wrap: wrap;
+  /* --gap: 1rem; */
+  margin: calc(-1 * var(--gap)) 0 0 calc(-1 * var(--gap));
+  width: calc(100% + var(--gap));
+}
+
+.gallery-photos > img {
+  width: 50%;
+  height: 50%;
+}
+
+#table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+tr {
+  padding-left: 2rem;
+  height: 50px;
+  cursor: pointer;
+}
+
+tr:hover {
+  background-color: rgb(230, 229, 229);
+}
+
+td:nth-child(n + 2) {
+  font-weight: 300;
+}
+
+td:nth-child(n + 1) {
+  padding-left: 1rem;
+}
+
+.egolf-link {
+  margin-top: 1rem;
+}
+
+.spec-link {
+  color: rgb(55, 55, 223);
+  font-weight: 400;
+}
+
+.review-link {
+  color: rgb(55, 55, 223);
+  margin-left: 3px;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.review-link:hover {
+  text-decoration: underline;
+}
+
+.review-text {
+  font-weight: 400;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+@media screen and (min-width: 895px) {
+  .intro {
+    display: flex;
+    align-items: center;
+  }
+
+  .intro-photo {
+    width: 40%;
+    height: 40%;
+  }
+
+  .intro-photo:not(:nth-child(3)) {
+    margin-right: 1.2rem;
+  }
+
+  .comfort-text {
+    margin-right: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 895px) {
+}
