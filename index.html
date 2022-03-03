@@ -3,84 +3,95 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>Car Page</title>
-    <link href="reset.css" rel="stylesheet" type="text/css" />
-    <link href="style.css" rel="stylesheet" type="text/css" />
-
+    <title>Premium VW - New e-golf</title>
+    <link rel="icon" href="./image/volkswagen.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="reset.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js" defer></script>
   </head>
   <body>
-    <div class="menu">
+    <nav id="top" class="menu">
       <div class="logo-container">
-        <a class="logo-link"
-          ><h1 class="brand-name">Premium</h1>
-          <img class="logo" src="./image/volkswagen.svg"
+        <a href="#" class="logo-link"
+          ><p class="brand-name">Premium</p>
+          <img class="logo" src="./image/volkswagen.svg" alt="'logo"
         /></a>
       </div>
-      <nav class="nav">
-        <a href="" class="menu-item">Home</a>
-        <a href="" class="menu-item">New Cars</a>
-        <a href="" class="menu-item">Used Cars</a>
-        <a href="" class="menu-item">Offers</a>
-        <a href="" class="menu-item">About Us</a>
-        <a href="" class="menu-item">Contact</a>
-      </nav>
-    </div>
+      <div class="nav">
+        <button class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </button>
+        <div class="menu-item-container">
+          <ul class="menulist">
+            <li class="menu-item"><a href="">Home</a></li>
+            <li class="menu-item"><a href="">New Cars</a></li>
+            <li class="menu-item"><a href="">Used Cars</a></li>
+            <li class="menu-item"><a href="">Offers</a></li>
+            <li class="menu-item"><a href="">About Us</a></li>
+            <li class="menu-item"><a href="">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
     <div class="e-golf-container">
-      <img class="egolf-img" src="./image/e-golf-hero.webp" />
-      <!-- <div class="parallax"></div> -->
+      <img class="egolf-img" src="./image/e-golf-hero.webp" alt="egolf image" />
       <div class="e-golf-description">
-        <h2 class="egolf-title">The New VW e-Golf</h2>
-        <h3 class="egolf-features">
+        <h1 class="egolf-title">The New VW e-Golf</h1>
+        <p class="egolf-features">
           Powerful, efficient, sustainable.
           <span class="egolf-smalltext">From only £29,999</span>
-        </h3>
+        </p>
         <ul class="egolf-options">
           <li>Enquire Now</li>
           <li>Book a Test Drive</li>
-          <li><a>More info</a></li>
+          <li><a href="#info">More info</a></li>
         </ul>
       </div>
     </div>
 
-    <div class="sub-container">
-      <div class="info-container">
-        <h2 class="sub-title">INFORMATION</h2>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni eaque
-          modi fugit earum excepturi sapiente ex sed quod perferendis cum libero
-          voluptas harum ipsa rerum praesentium, laboriosam eos? Ipsa delectus
-          deleniti vero, consequatur, sunt repudiandae est, eligendi provident
-          illo ipsum harum ea explicabo! Neque accusantium numquam, veritatis
-          quis explicabo, fugiat maxime perferendis deserunt asperiores
-          inventore necessitatibus soluta! Quisquam quas id ratione optio magnam
-          rerum dolor soluta beatae sunt qui repellendus facilis voluptatem
-          molestias quae, fugiat nemo. Aperiam, molestias mollitia quod hic
-          laborum voluptatem odit quos perspiciatis repudiandae maiores, veniam
-          at?
-        </p>
+    <div id="info" class="sub-container">
+      <h2 class="sub-title">INFORMATION</h2>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni eaque
+        modi fugit earum excepturi sapiente ex sed quod perferendis cum libero
+        voluptas harum ipsa rerum praesentium, laboriosam eos? Ipsa delectus
+        deleniti vero, consequatur, sunt repudiandae est, eligendi provident
+        illo ipsum harum ea explicabo! Neque accusantium numquam, veritatis quis
+        explicabo, fugiat maxime perferendis deserunt asperiores inventore
+        necessitatibus soluta! Quisquam quas id ratione optio magnam rerum dolor
+        soluta beatae sunt qui repellendus facilis voluptatem molestias quae,
+        fugiat nemo. Aperiam, molestias mollitia quod hic laborum voluptatem
+        odit quos perspiciatis repudiandae maiores, veniam at?
+      </p>
 
-        <div class="info-nav-container">
-          <ul class="info-nav">
-            <li><a href="">Gallery</a></li>
-            <li><a href="'">Tech Specs</a></li>
-            <li><a href="">Reviews</a></li>
-            <li><a href="">Similae Vehicles</a></li>
-          </ul>
-        </div>
+      <div class="page-nav-container">
+        <ul class="page-nav">
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#spec">Tech Specs</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#similar">Similar Vehicles</a></li>
+        </ul>
       </div>
 
-      <div class="intro">
-        <img class="intro-photo" src="./image/gallery-img-3.webp" />
-        <div class="intro-text">
-          <h3 class="intro-title">Design</h3>
+      <div data-aos="fade-up" class="feature">
+        <img
+          class="feature-photo"
+          src="./image/gallery-img-3.webp"
+          alt="car feature image"
+        />
+        <div class="feature-text">
+          <h3 class="feature-title">Design</h3>
           <p>
             The e‑Golf retains the classic exterior styling of the Golf, with
             its own electric twist. LED headlights, C-shaped running lights and
@@ -94,10 +105,14 @@
         </div>
       </div>
 
-      <div class="intro">
-        <img class="intro-photo" src="./image/gallery-img-5.webp" />
-        <div class="intro-text">
-          <h3 class="intro-title">Comfort</h3>
+      <div data-aos="fade-up" class="feature">
+        <img
+          class="feature-photo"
+          src="./image/gallery-img-5.webp"
+          alt="car feature image"
+        />
+        <div class="feature-text">
+          <h3 class="feature-title">Comfort</h3>
           <p class="comfort-text">
             The e‑Golf provides for comfort, convenience and style. The cabin is
             climate controlled and the fully adjustable front seats offer lumber
@@ -112,10 +127,14 @@
         </div>
       </div>
 
-      <div class="intro">
-        <img class="intro-photo" src="./image/gallery-img-4.webp" />
-        <div class="intro-text">
-          <h3 class="intro-title">Driver Assistance</h3>
+      <div data-aos="fade-up" class="feature">
+        <img
+          class="feature-photo"
+          src="./image/gallery-img-4.webp"
+          alt="car feature image"
+        />
+        <div class="feature-text">
+          <h3 class="feature-title">Driver Assistance</h3>
           <p>
             The e‑Golf features the full suite of Volkswagen driver assistance,
             including Adaptive Cruise Control, Front Assist, Blind Spot Sensor,
@@ -125,27 +144,59 @@
         </div>
       </div>
 
+      <div id="gallery"></div>
       <div class="gallery">
-        <h2 class="sub-title gallery-title">IMAGE GALLERY</h2>
+        <h2 class="sub-title">IMAGE GALLERY</h2>
         <div class="image-filter-container">
           <p>Click an image to enlarge. The gallery can also be filtered:</p>
           <select class="image-select">
-            <option>Show all</option>
-            <option>Exterior</option>
-            <option>Interior</option>
+            <option value="all">Show all</option>
+            <option value="exterior">Exterior</option>
+            <option value="interior">Interior</option>
           </select>
         </div>
 
         <div class="gallery-photos">
-          <img src="./image/gallery-img-1.webp" />
-          <img src="./image/gallery-img-2.webp" />
-          <img src="./image/gallery-img-3.webp" />
-          <img src="./image/gallery-img-4.webp" />
-          <img src="./image/gallery-img-5.webp" />
-          <img src="./image/gallery-img-6.webp" />
+          <img
+            data-category="exterior"
+            data-aos="fade-up"
+            src="./image/gallery-img-1.webp"
+            alt="car photo display"
+          />
+          <img
+            data-category="exterior"
+            data-aos="fade-up"
+            src="./image/gallery-img-2.webp"
+            alt="car photo display"
+          />
+          <img
+            data-category="exterior"
+            data-aos="fade-up"
+            src="./image/gallery-img-3.webp"
+            alt="car photo display"
+          />
+          <img
+            data-category="exterior"
+            data-aos="fade-up"
+            src="./image/gallery-img-4.webp"
+            alt="car photo display"
+          />
+          <img
+            data-category="interior"
+            data-aos="fade-up"
+            src="./image/gallery-img-5.webp"
+            alt="car photo display"
+          />
+          <img
+            data-category="interior"
+            data-aos="fade-up"
+            src="./image/gallery-img-6.webp"
+            alt="car photo display"
+          />
         </div>
       </div>
 
+      <div id="spec"></div>
       <div class="specs-container">
         <h2 class="sub-title">TECHNICAL SPECS</h2>
         <table id="table">
@@ -187,25 +238,32 @@
 
         <p class="egolf-link">
           Please visit our partner website to view the New e-Golf's
-          <a class="spec-link" href="">full technical specifications</a>.
+          <a
+            class="spec-link"
+            href="https://ev-database.uk/car/1087/Volkswagen-e-Golf#:~:text=Drivetrain%20and%20Performance,per%20hour%20in%209.6%20seconds."
+            target="blank"
+            >full technical specifications</a
+          >.
         </p>
       </div>
 
+      <div id="reviews"></div>
       <div class="reviews">
         <h2 class="sub-title">REVIEWS</h2>
-        <h3 class="review-text">
+        <blockquote data-aos="fade-up" class="review-text">
           The VW e-Golf is one of the best electric cars on sale, thanks to its
           competitive range, decent equipment and its excellent space and
           driving dynamics.
           <p>一<a class="review-link" href="">What Car?</a></p>
-        </h3>
-        <h3 class="review-text">
+        </blockquote>
+        <blockquote data-aos="fade-up" class="review-text">
           Volkswagen's take on the all-electric family car is, as you'd expect,
           an extremely convincing one.
           <p>一<a class="review-link" href="">Top Gear</a></p>
-        </h3>
+        </blockquote>
       </div>
 
+      <div id="similar"></div>
       <div class="similar-car">
         <h3 class="sub-title">SIMILAR VEHICLES</h3>
         <p>
@@ -213,7 +271,93 @@
           sale. If you like the e-Golf, you may also be interested in these
           similar vehicles.
         </p>
+        <div class="other-car">
+          <img src="./image/vw-id-3.webp" alt="image of Volksawgen ID.3" />
+          <div>
+            <h4>Volkswagen ID.3</h4>
+            <p>
+              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
+              scelerisque ante sollicitudin. Cras purus odio, vestibulum in
+              vulputate at, tempus viverra turpis. Fusce condimentum nunc ac
+              nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+            </p>
+            <a href="">Learn more about the ID.3</a>
+          </div>
+        </div>
+
+        <div class="other-car">
+          <img src="./image/vw-golf-8.webp" alt="image of Volkswagen Golf 8" />
+          <div>
+            <h4>Volkswagen Golf 8</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+              quidem, earum voluptate, aliquid ab id soluta suscipit animi saepe
+              beatae doloribus rem hic in veritatis laborum debitis incidunt
+              dolorem omnis repellat autem nihil totam minus cupiditate.
+            </p>
+            <a href="">Learn more about the Golf 8</a>
+          </div>
+        </div>
+
+        <div class="btt-btn-container">
+          <a class="backtotop-btn" href="#">Back to top of page</a>
+        </div>
       </div>
     </div>
+
+    <footer>
+      <div class="footer-first-section">
+        <div class="footer-first-section-left">
+          <div class="openingtime footer-item">
+            <table>
+              <tr>
+                <th>Mon-Fri</th>
+                <td>09:00-17:00</td>
+              </tr>
+              <tr>
+                <th>Saturday</th>
+                <td>10:00-18:00</td>
+              </tr>
+              <tr>
+                <th>Sunday</th>
+                <td>Closed</td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="footer-nav-container footer-item">
+            <ul class="footer-nav">
+              <li><a href="">Home</a></li>
+              <li><a href="">New Cars</a></li>
+              <li><a href="">Used Cars</a></li>
+              <li><a href="">Offers</a></li>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <p>
+            Premium Volkswagen limited is an appointed representative of
+            Automotive Compliance Ltd, which is authorised and regulated by the
+            Financial Conduct Authority (FCA No 497010).
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-second-section">
+        <div class="social-icon">
+          <a href="#"><img src="./image/facebook.svg" alt="fb icon" /></a>
+          <a href="#"
+            ><img src="./image/instagram.svg" alt="instagram icon"
+          /></a>
+          <a href="#"><img src="./image/twitter.svg" alt="twitter icon" /></a>
+        </div>
+        <p class="copyright">
+          Copyright © 2020 Premium Volkswagen | Website by Jessy Yeh | Icons by
+          Freepik from www.flaticon.com | Animations using AOS
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
