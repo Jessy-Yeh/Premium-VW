@@ -237,7 +237,45 @@ p {
 }
 
 .gallery-photos > img {
+  cursor: pointer;
   margin-bottom: 1.5rem;
+}
+
+.lightbox {
+  display: flex;
+  background-color: rgba(62, 60, 60, 0.7);
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+}
+
+.lightbox-img-container {
+  width: 95vw;
+  position: relative;
+}
+
+#lightbox-img {
+  width: 100%;
+}
+
+.lightbox-img-container button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: none;
+  background-color: #414141;
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.hide-lightbox {
+  display: none;
 }
 
 #table {
@@ -512,6 +550,10 @@ footer {
     margin-left: 0.8rem;
     margin-bottom: 0.8rem;
   }
+
+  .lightbox-img-container {
+    max-width: 60vw;
+  }
 }
 
 @media screen and (min-width: 1000px) {
@@ -577,4 +619,5 @@ footer {
   .openingtime tr {
     line-height: 5px;
   }
-}
+
+  
