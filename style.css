@@ -95,14 +95,6 @@ p {
   width: 100%;
 }
 
-/* .parallax {
-  background-image: url("./image/e-golf-hero.webp");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-} */
-
 .e-golf-container {
   position: relative;
   height: 100vh;
@@ -619,5 +611,4 @@ footer {
   .openingtime tr {
     line-height: 5px;
   }
-
-  
+}
